@@ -1,4 +1,4 @@
 <resources>
-    <string name="edit_message">Enter a message</string>
-
+    <string name="edit_message">Enter the zipcode</string>
+    <string name="button_send">Call</string>
 </resources>
