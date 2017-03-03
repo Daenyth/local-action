@@ -11,6 +11,6 @@ class SunlightApi:
     def url(endpoint: str) -> str:
         return API_ROOT + endpoint
 
-    def locate_legislators(self, zipcode):
+    def locate_legislators(self, zipcode: str):
         resp = requests.get(self.url("legislators/locate"), params={'zip': zipcode})
-        return resp
+        return resp.json()
